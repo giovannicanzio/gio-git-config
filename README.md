@@ -1,4 +1,4 @@
 gio-git-config
 ==============
 
-my beloved git config file
+save file in ~/ and customize as needed
