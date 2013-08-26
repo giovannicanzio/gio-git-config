@@ -1,0 +1,34 @@
+[user]
+        email = email@domain.com
+        name = Name lastname
+
+[color]
+        ui = auto
+        interactive = auto
+
+[color "diff"]
+        meta = yellow bold
+        frag = magenta bold
+        old = red
+        new = cyan
+
+[alias]
+        s = status
+        a = !git add . && git status
+        sh = show
+        au = !git add -u . && git status
+        aa = !git add . && git add -u . && git status
+        c = commit
+        cm = commit -m
+        ca = commit --amend # careful
+        ac = !git add . && git commit
+        acm = !git add . && git commit -m
+        lall = log --graph --all --pretty=format:'%C(yellow)%h%C(cyan)%d%Creset %s %C(white)- %an, %ar%Creset'
+        l = log --graph  --pretty=format:'%C(yellow)%h%C(cyan)%d%Creset %s %C(white)- %an, %ar%Creset'
+        ll = log --stat --abbrev-commit
+        d = diff --color-words
+        dh = diff --color-words head
+        master = checkout master
+        spull = svn rebase
+        spush = svn dcommit
+        alias = !git config --list | grep 'alias\\.' | sed 's/alias\\.\\([^=]*\\)=\\(.*\\)/\\1\\\t => \\2/' | sort
