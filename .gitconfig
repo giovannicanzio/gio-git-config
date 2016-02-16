@@ -15,6 +15,9 @@
 [alias]
         s = status
         a = !git add . && git status
+        pl = pull
+        ps = push
+        acm = add && git commit -m
         sh = show
         au = !git add -u . && git status
         aa = !git add . && git add -u . && git status
@@ -28,7 +31,9 @@
         ll = log --stat --abbrev-commit
         d = diff --color-words
         dh = diff --color-words head
+        develoment = checkout development
         master = checkout master
+        production = checkout production
         spull = svn rebase
         spush = svn dcommit
         alias = !git config --list | grep 'alias\\.' | sed 's/alias\\.\\([^=]*\\)=\\(.*\\)/\\1\\\t => \\2/' | sort
